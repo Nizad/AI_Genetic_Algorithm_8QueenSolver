@@ -11,6 +11,14 @@ In the 8 Queen problem, 8 ministers should be placed on an 8 x 8 chessboard, so 
 - Genetic Algorithm
 - Matlab
 
+## Parammeters
+- The number of population
+- The number of children
+- Max of Generation
+- Mutation rate
+- With/without mutation
+
+
 ## Demo & Screenshots
 ![8Queen](https://github.com/Nizad/AI_Genetic_Algorithm_8QueenSolver/assets/28957789/1980f2d7-b128-4d37-b285-aa47b6090d12)
 
