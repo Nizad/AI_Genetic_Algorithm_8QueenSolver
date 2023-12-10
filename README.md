@@ -1,17 +1,33 @@
-# 8 Queen Solver with Genetic Algorithm
+# 8 Queens Problem Solution using Genetic Algorithm
+
 ## Description
-Solving the problem of 8 Queens:
+This repository provides a solution to the classic 8 queens problem using a genetic algorithm. 
+The goal of the problem is to place 8 queens on an 8x8 chessboard in such a way that no two queens threaten each other.
 
-![chess board](https://github.com/Nizad/AI_Genetic_Algorithm_8QueenSolver/assets/28957789/6ce17e71-23d3-4507-a304-0dbb94a2c241)
+![chess board](https://github.com/Nizad/AI_Genetic_Algorithm_8QueenSolver/assets/28957789/6ce17e71-23d3-4507-a304-0dbb94a2c241) 
 
-In the 8 Queen problem, 8 ministers should be placed on an 8 x 8 chessboard, so that none of the two queens threaten each other.
+## Steps:
 
+1. <b>Initial Population Generation:</b> A population of random solutions (chessboard configurations) is generated.
+2. <b>Fitness Evaluation:</b> Each solution in the population is evaluated based on how many queens threaten each other.
+   - maxfitness =((n*(n-1))/2);
+3. <b>Selection:</b> The fittest solutions are selected to create the next generation.
+4. <b>ReCombination:</b> ReCombination Function creates offspring with characteristics of both parents. The inputs of the function are two parents along with a cross-over point, and the output of the function are offsprings produced by recombination.
+
+ ![3](https://github.com/Nizad/AI_Genetic_Algorithm_8QueenSolver/assets/28957789/9de3f020-1a31-4021-9ba2-a5aa86dcd7dc)
+
+5. <b>Mutation:</b> Random mutation is applied to some of the offspring to introduce diversity in the population.
+   - Using Mutation is optional in this program and it could be chosen or not.
+6. <b>Repeat Steps 2-5:</b> The process is repeated until a satisfactory solution (no threatening queens) is found or a maximum number of iterations is reached.
+7. <b>Solution Display:</b> The final solution, along with the positions of the 8 queens on the chessboard, is displayed.
+
+For a more detailed explanation, please refer to the code and documentation in the repository.
 
 ## Technologies
 - Genetic Algorithm
 - Matlab
 
-## Parammeters
+## Parameters
 - The number of population
 - The number of children
 - Max of Generation
